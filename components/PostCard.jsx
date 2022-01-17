@@ -1,0 +1,27 @@
+import React from "react";
+import Link from "next/link";
+export default function PostCard({ post }) {
+  console.log(post);
+  return (
+    <div className="max-w-2xl mx-auto p-12 pt-8 -mt-24 bg-white">
+      <article key={post?._id}>
+        <p className="text-brand-green text-sm pt-4 pb-1">
+          {post?.publishedAt}
+        </p>
+        <p className="text-gray-800 text-md font-light pb-4">
+          {post?.brand?.title}
+        </p>
+        <Link href={`/${post?.brand?.slug.current}/${post?.slug}`}>
+          <a className="font-serif font-semibold text-5xl">{post?.title}</a>
+        </Link>
+        <p className="font-extralight text-3xl pb-8 pt-6">
+          {post?.description}
+        </p>
+        <Link href={`/${post?.brand?.slug.current}/${post?.slug}`}>
+          <a className="font-normal italic text-gray-400 text-2xl">Read more</a>
+        </Link>
+      </article>
+      <hr className="mt-6 text-gray-900 pt-16" />
+    </div>
+  );
+}

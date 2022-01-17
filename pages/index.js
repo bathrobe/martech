@@ -1,23 +1,19 @@
 import Link from "next/link";
 import { client } from "../lib/sanity/client";
 import { homeQuery } from "../lib/sanity/homeQuery";
+import MainHead from "../components/MainHead";
+import Layout from "../components/Layout";
+import PostCard from "../components/PostCard";
 export default function Home({ posts }) {
   return (
-    <div>
+    <Layout>
       <main>
-        <h1>My Blog</h1>
-        <hr />
-        <ul>
-          {posts.map((p) => (
-            <li key={p._id}>
-              <Link href={`/posts/${p.slug}`}>
-                <a>{p.title}</a>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <MainHead />
+        {posts.map((post) => (
+          <PostCard post={post} />
+        ))}
       </main>
-    </div>
+    </Layout>
   );
 }
 
