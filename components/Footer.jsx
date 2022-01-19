@@ -2,8 +2,8 @@ import React from "react";
 import Link from "next/link";
 export default function Footer() {
   return (
-    <footer className="bg-gray-300">
-      <div className="flex mx-auto mt-12 justify-center max-w-container">
+    <footer className="bg-gray-300 pt-12">
+      <div className="flex mx-auto justify-center max-w-container">
         <div className="flex items-center justify-evenly">
           <Link className="mx-4" href="">
             <a className="text-black px-4 text-lg font-normal uppercase">
@@ -15,7 +15,7 @@ export default function Footer() {
               Interviews
             </a>
           </Link>
-          <div>
+          <div className="mb-12">
             <img src="/r_logo.webp" alt="logo" />
             <div className="flex mt-4">
               <img className="px-5" src="/twitter.svg" alt="logo" />
@@ -34,7 +34,7 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <p className="text-gray-500 font-thin text-xl">© 2022 Martech Record</p>
+      <p className="text-gray-500 font-thin text-sm">© 2022 Martech Record</p>
     </footer>
   );
 }

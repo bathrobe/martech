@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ["Oswald", "sans-serif"],
-      serif: ["Playfair", "serif"],
+      serif: ["Playfair Display", "serif"],
     },
     extend: {
       maxWidth: {

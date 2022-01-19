@@ -2,11 +2,16 @@ import PortableText from "react-portable-text";
 import React from "react";
 import urlFor from "../lib/sanity/urlFor";
 import BlockContent from "@sanity/block-content-to-react";
+import Link from "next/link";
 export default function BrandBio({ brand }) {
   return (
     <figure className="max-w-container mx-auto px-20 mb-10">
       <hr className="text-gray-400 pt-12" />
-      <img src={urlFor(brand?.logo).width(300)} />
+      <Link href={`../${brand?.slug.current}`}>
+        <a className="underline">
+          <img src={urlFor(brand?.logo).width(300)} />
+        </a>
+      </Link>
       {brand?.description ? (
         <PortableText
           content={brand?.description}

@@ -29,7 +29,7 @@ export default function Header() {
               Whitepapers
             </a>
           </Link>
-          <Link href="">
+          <Link href="/about">
             <a className="text-white text-sm font-semibold uppercase">About</a>
           </Link>
         </nav>

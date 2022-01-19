@@ -4,11 +4,15 @@ import { client } from "../../lib/sanity/client";
 import groq from "groq";
 import Layout from "../../components/Layout";
 import BrandBio from "../../components/BrandBio";
+import PostCard from "../../components/PostCard";
 export default function Brand({ brand }) {
   return (
     <Layout>
       <BrandBio brand={brand} />
-      All this brand's posts will go here!
+
+      {brand?.posts.map((p) => {
+        return <PostCard post={p} />;
+      })}
     </Layout>
   );
 }

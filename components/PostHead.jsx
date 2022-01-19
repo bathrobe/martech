@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 export default function PostHead({ title, description, brand }) {
   return (
     <section className="mx-auto pt-12 flex flex-col justify-between bg-gray-500 max-w-container px-14 py-8">
@@ -8,7 +8,10 @@ export default function PostHead({ title, description, brand }) {
         {description}
       </h2>
       <p className="text-white text-xl">
-        Sponsored Content brought to you by {brand?.title}
+        Sponsored Content brought to you by{" "}
+        <Link href={`../${brand?.slug.current}`}>
+          <a className="underline">{brand?.title}</a>
+        </Link>
       </p>
     </section>
   );
