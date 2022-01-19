@@ -34,7 +34,7 @@ export default function Header() {
           </Link>
         </nav>
       </header>
-      <div className="bg-brand-green h-5"></div>
+      <div className="bg-brand-green text-brand-green">Martech Record 2022</div>
     </>
   );
 }

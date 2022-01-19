@@ -14,7 +14,7 @@ module.exports = {
         "cta-texture": "url('/bg.webp')",
       },
       colors: {
-        white: "#ffffff",
+        white: "#fff",
         black: "#000",
         "brand-green": "#507F70",
       },
