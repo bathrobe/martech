@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import dayjs from "dayjs";
-export default function PostCard({ post }) {
-  console.log(post);
+export default function PostCard({ brand, brandPage = false, post }) {
+  console.log(brand);
   return (
-    <div className="max-w-2xl mx-auto p-12 pt-8 -mt-24 bg-white">
+    <div
+      className={`max-w-2xl mx-auto pt-8 ${brandPage ? "" : "-mt-24"} bg-white`}
+    >
       <article key={post?._id}>
         <p className="text-brand-green text-sm pt-4 pb-1">
           {dayjs(post?.publishedAt).format("MMM D, YYYY")}
@@ -12,7 +14,13 @@ export default function PostCard({ post }) {
         <p className="text-gray-800 text-md font-light pb-4">
           {post?.brand?.title}
         </p>
-        <Link href={`/${post?.brand?.slug?.current}/${post?.slug}`}>
+        <Link
+          href={
+            brandPage
+              ? `${brand?.slug}/${post?.slug?.current}`
+              : `/${post?.brand?.slug?.current}/${post?.slug}`
+          }
+        >
           <a className="font-serif font-semibold text-5xl">{post?.title}</a>
         </Link>
         <p className="font-extralight text-3xl pb-8 pt-6">

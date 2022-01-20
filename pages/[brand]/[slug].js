@@ -8,7 +8,20 @@ import PostHead from "../../components/PostHead";
 import BrandBio from "../../components/BrandBio";
 import CTA from "../../components/CTA";
 import PortableText from "react-portable-text";
+import YouTube from "react-youtube";
 export default function Post({ post }) {
+  // this strips the youtube video URL down to its ID
+  let res = "";
+  if (post?._type === "videoInterview") {
+    var regExp =
+      /^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    var match = post?.videoUrl.match(regExp);
+    if (match && match[2].length == 11) {
+      res = match[2];
+    } else {
+      res = "Sorry, the URL uploaded was not a valid YouTube link.";
+    }
+  }
   return (
     <Layout>
       <PostHead
@@ -17,6 +30,11 @@ export default function Post({ post }) {
         brand={post?.brand}
       />
       <div className="max-w-container py-8 px-20 font-thin text-xl mx-auto">
+        {post?._type === "videoInterview" ? (
+          <YouTube className="my-8" videoId={res} />
+        ) : (
+          ""
+        )}
         {post?.body ? (
           <PortableText
             content={post?.body}

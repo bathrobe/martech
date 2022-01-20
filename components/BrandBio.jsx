@@ -3,10 +3,13 @@ import React from "react";
 import urlFor from "../lib/sanity/urlFor";
 import BlockContent from "@sanity/block-content-to-react";
 import Link from "next/link";
-export default function BrandBio({ brand }) {
+export default function BrandBio({ brand, brandPage = false }) {
   return (
-    <figure className="max-w-container mx-auto px-20 mb-10">
-      <hr className="text-gray-400 pt-12" />
+    <figure
+      className={`max-w-container ${
+        brandPage ? "mb-24" : "mb-12"
+      } mt-12 mx-auto`}
+    >
       <Link href={`../${brand?.slug.current}`}>
         <a className="underline">
           <img src={urlFor(brand?.logo).width(300)} />

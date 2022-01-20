@@ -8,10 +8,10 @@ import PostCard from "../../components/PostCard";
 export default function Brand({ brand }) {
   return (
     <Layout>
-      <BrandBio brand={brand} />
+      <BrandBio brandPage={true} brand={brand} />
 
       {brand?.posts.map((p) => {
-        return <PostCard post={p} />;
+        return <PostCard brand={brand} post={p} brandPage={true} />;
       })}
     </Layout>
   );
