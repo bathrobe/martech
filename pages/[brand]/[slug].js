@@ -22,6 +22,7 @@ export default function Post({ post }) {
       res = "Sorry, the URL uploaded was not a valid YouTube link.";
     }
   }
+
   return (
     <Layout>
       <PostHead
@@ -32,6 +33,21 @@ export default function Post({ post }) {
       <div className="max-w-container py-8 px-20 font-thin text-xl mx-auto">
         {post?._type === "videoInterview" ? (
           <YouTube className="my-8" videoId={res} />
+        ) : (
+          ""
+        )}
+        {post?._type === "whitepaper" ? (
+          <div class="flex my-12 justify-center">
+            <button
+              type="button"
+              onClick={() => {
+                window.open(post?.whitepaper);
+              }}
+              className="text-white bg-gradient-to-r from-brand-green via-green-700 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-green-300 dark:focus:ring-green-800  font-medium rounded-lg text-lg px-5 py-2.5 text-center mr-2 mb-2"
+            >
+              Read {post?.title}
+            </button>
+          </div>
         ) : (
           ""
         )}
