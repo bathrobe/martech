@@ -5,7 +5,9 @@ export default function PostCard({ brand, brandPage = false, post }) {
   console.log(brand);
   return (
     <div
-      className={`max-w-2xl mx-auto pt-8 ${brandPage ? "" : "-mt-24"} bg-white`}
+      className={`max-w-2xl px-14 mx-auto pt-8 ${
+        brandPage ? "py-14" : "-mt-24"
+      } bg-white`}
     >
       <article key={post?._id}>
         <p className="text-brand-green text-sm pt-4 pb-1">
