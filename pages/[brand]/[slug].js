@@ -30,7 +30,7 @@ export default function Post({ post }) {
         description={post?.description}
         brand={post?.brand}
       />
-      <div className="max-w-container py-8 px-20 font-thin text-xl mx-auto">
+      <div className="max-w-container py-8 px-10 font-thin text-xl mx-auto">
         {post?._type === "videoInterview" ? (
           <YouTube className="my-8" videoId={res} />
         ) : (
@@ -51,6 +51,7 @@ export default function Post({ post }) {
         ) : (
           ""
         )}
+        {post?._type === "newHire" ? "new hire herenewHire" : ""}
         {post?.body ? (
           <PortableText
             content={post?.body}
