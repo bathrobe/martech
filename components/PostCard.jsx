@@ -2,10 +2,9 @@ import React from "react";
 import Link from "next/link";
 import dayjs from "dayjs";
 export default function PostCard({ brand, brandPage = false, post }) {
-  console.log(brand);
   return (
     <div
-      className={`max-w-2xl px-14 mx-auto pt-8 ${
+      className={`max-w-2xl px-14 mx-auto pt-24 ${
         brandPage ? "py-14" : "-mt-24"
       } bg-white`}
     >
