@@ -1,12 +1,17 @@
 import React from "react";
 import Link from "next/link";
 import dayjs from "dayjs";
-export default function PostCard({ brand, brandPage = false, post }) {
+export default function PostCard({
+  brand,
+  first = false,
+  brandPage = false,
+  post,
+}) {
   return (
     <div
-      className={`max-w-2xl px-14 mx-auto pt-24 ${
-        brandPage ? "py-14" : "-mt-24"
-      } bg-white`}
+      className={`max-w-2xl -mt-14 px-14 mx-auto pt-8 ${
+        brandPage ? "py-14" : ""
+      } bg-white ${first ? "-mt-14" : ""}`}
     >
       <article key={post?._id}>
         <p className="text-brand-green text-sm pt-4 pb-1">

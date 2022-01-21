@@ -9,6 +9,7 @@ import BrandBio from "../../components/BrandBio";
 import CTA from "../../components/CTA";
 import PortableText from "react-portable-text";
 import YouTube from "react-youtube";
+import Employee from "../../components/Employee";
 export default function Post({ post }) {
   // this strips the youtube video URL down to its ID
   let res = "";
@@ -51,7 +52,11 @@ export default function Post({ post }) {
         ) : (
           ""
         )}
-        {post?._type === "newHire" ? "new hire herenewHire" : ""}
+        {post?._type === "newHire" ? (
+          <Employee employee={post?.employee} />
+        ) : (
+          ""
+        )}
         {post?.body ? (
           <PortableText
             content={post?.body}

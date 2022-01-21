@@ -10,6 +10,7 @@ export default function BrandBio({ brand, brandPage = false }) {
         brandPage ? "mb-24" : "mb-12"
       } mt-12 mx-auto`}
     >
+      {brandPage ? "" : <hr className="text-gray-800 mb-10" />}
       <Link href={`../${brand?.slug.current}`}>
         <a className="underline">
           <img src={urlFor(brand?.logo).width(300)} />

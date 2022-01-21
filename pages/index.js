@@ -5,12 +5,16 @@ import MainHead from "../components/MainHead";
 import Layout from "../components/Layout";
 import PostCard from "../components/PostCard";
 export default function Home({ posts }) {
+  const first = posts[0];
+  const rest = posts.slice(1);
+
   return (
     <Layout>
       <main>
         <MainHead />
-        {posts.map((post) => (
-          <PostCard post={post} />
+        <PostCard post={first} first={true} />
+        {rest.map((p) => (
+          <PostCard post={p} />
         ))}
       </main>
     </Layout>
