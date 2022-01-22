@@ -16,5 +16,3 @@ export default function PostHead({ title, description, brand }) {
     </section>
   );
 }
-
-<main className="mx-auto max-w-container"></main>;

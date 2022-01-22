@@ -9,7 +9,7 @@ export default function PostCard({
 }) {
   return (
     <div
-      className={`max-w-2xl -mt-14 px-14 mx-auto pt-8 ${
+      className={`max-w-2xl px-14 mx-auto pt-8 ${
         brandPage ? "py-14" : ""
       } bg-white ${first ? "-mt-14" : ""}`}
     >
