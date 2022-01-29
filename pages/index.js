@@ -4,12 +4,12 @@ import { homeQuery } from "../lib/sanity/homeQuery";
 import MainHead from "../components/MainHead";
 import Layout from "../components/Layout";
 import PostCard from "../components/PostCard";
-export default function Home({ posts }) {
+import { allBrandsQuery } from "../lib/sanity/allBrandsQuery.js"
+export default function Home({  posts }) {
   const first = posts[0];
   const rest = posts.slice(1);
-
   return (
-    <Layout>
+    <Layout brands={posts?.map(p=>p?.brand)}>
       <main>
         <MainHead />
         <PostCard post={first} first={true} />
@@ -23,7 +23,6 @@ export default function Home({ posts }) {
 
 export async function getStaticProps({ params }) {
   const posts = await client.fetch(homeQuery);
-
   return {
     props: {
       posts,

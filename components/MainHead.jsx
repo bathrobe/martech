@@ -10,7 +10,7 @@ export default function MainHead() {
         width="539px"
         height="109px"
       />
-      <h5 className="text-xl uppercase font-light mx-auto text-center mt-12">
+      <h5 className="text-lg uppercase font-normal mx-auto text-center mt-5">
         SPONSORED CONTENT
       </h5>
     </div>

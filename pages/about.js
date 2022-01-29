@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 import { client } from "../lib/sanity/client";
 import PortableText from "react-portable-text";
 export default function about({ about }) {
-  console.log(about);
   return (
     <Layout>
       <div className="max-w-container mx-auto">
