@@ -19,7 +19,7 @@ export default function Header({brands}) {
         </Link>
         </div>
       </nav>
-      <div className="bg-brand-green pb-4 text-brand-green"></div>
+      <div className="bg-brand-gold pb-4 text-brand-green"></div>
     </header>
   );
 }

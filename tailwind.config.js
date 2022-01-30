@@ -17,6 +17,7 @@ module.exports = {
         white: "#fff",
         black: "#000",
         "brand-green": "#507F70",
+        "brand-gold": "#FAB418"
       },
     },
   },
