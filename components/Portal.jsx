@@ -59,11 +59,11 @@ const Portal = () => {
       <div class="xl:w-1/3 md:w-1/2 p-4">
         <div class="border border-gray-200 p-6 rounded-lg">
           <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-yellow-100 text-green-500 mb-4">
-<Link href="/about"><a><img className="text-gray-700" src="/info.svg"/>
-</a></Link>                           </div>
-          <Link href="/about"><a>          <h2 class="text-lg text-gray-900 font-medium title-font mb-2">About Martech</h2>
+<a href="https://martechrecord.com"><img className="text-gray-700" src="/info.svg"/>
+</a>                           </div>
+          <a href="https://martechrecord.com">          <h2 class="text-lg text-gray-900 font-medium title-font mb-2">About Martech</h2>
           <p class="leading-relaxed text-base">Learn more about the Martech Record, a decision maker's best resource.</p>
- </a></Link>
+ </a>
        </div>
       </div>
     </div>

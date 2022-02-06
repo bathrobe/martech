@@ -14,7 +14,8 @@ export default function about({ about, allBrands }) {
         <PortableText
           content={about?.body}
           serializers={{
-            h1: (props) => <h1 className="text-4xl pt-12 pb-4" {...props} />, h2: (props) => <h2 className="text-3xl pt-10 pb-4" {...props} />,
+            h1: (props) => <h1 className="text-4xl pt-12 pb-4" {...props} />,
+            h2: (props) => <h2 className="text-3xl pt-10 pb-4" {...props} />,
             h3: (props) => <h2 className="text-2xl pt-8 pb-4" {...props} />,
             h4: (props) => <h2 className="text-xl pt-6 pb-4" {...props} />,
             normal: (props) => (

@@ -14,11 +14,7 @@ export default function Home({  posts, allBrands }) {
       <main>
         <MainHead />
         <Portal/>
-        <PostCard post={first} first={true} />
-        {rest.map((p) => (
-          <PostCard post={p} />
-        ))}
-      </main>
+     </main>
     </Layout>
   
   );
