@@ -25,7 +25,8 @@ export default function Footer() {
             </a>
             </div>
           </div>
-          <Link className="mx-8" href="/whitepaper">
+
+          <Link className="mx-8" href="/whitepapers">
             <a className="text-black text-lg px-4 pl-8 font-normal uppercase">
               whitepaper
             </a>

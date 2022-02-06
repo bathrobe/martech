@@ -8,7 +8,8 @@ export default function about({ about, allBrands }) {
     <>
     <Layout brands={allBrands}>
       <div className="max-w-container mx-auto">
-        <h1 className="py-8 pb-12 text-black text-5xl font-serif">
+          
+<h1 className="text-4xl font-semibold mt-12 max-w-container mx-auto font-serif pb-12">
           {about?.title}
         </h1>
         <PortableText
