@@ -11,11 +11,11 @@ export default function BrandBio({ brand, brandPage = false }) {
       } mt-12 mx-auto`}
     >
       {brandPage ? "" : <hr className="text-gray-800 mb-10" />}
-      <Link href={`../${brand?.slug.current}`}>
+      {brandPage ? <img src={urlFor(brand?.logo).width(300)}/> : <Link href={`../${brand?.slug.current}`}>
         <a className="underline">
           <img src={urlFor(brand?.logo).width(300)} />
         </a>
-      </Link>
+      </Link>}
       {brand?.description ? (
         <PortableText
           content={brand?.description}

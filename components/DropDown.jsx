@@ -1,24 +1,16 @@
 import 'react-dropdown/style.css'
 import DropDownLink from "./DropDownLink.jsx"
-import client from "../lib/sanity/client.js" 
-import allBrandsQuery from "../lib/sanity/allBrandsQuery.js"
+import {client} from "../lib/sanity/client.js" 
+import {allBrandsQuery} from "../lib/sanity/allBrandsQuery.js"
 export default function Dropdown(brands){
-
-const key = 'title'
-
-  const uniqueBrands = [... new Map(brands?.brands?.map(item=> [item[key], item])).values()]
-
-  console.log(uniqueBrands)
-const tag = <DropDownLink brand={uniqueBrands[0]}/> 
-  const allBrands = uniqueBrands?.map(b => {
-    return(
-      <DropDownLink brand={b}/>
-    )
+  let brandList = brands?.brands?.map(b=>{
+    return  <DropDownLink brand={b}/>
   })
-  return     <div class="">
+  return   (  <div class="">
       <div class="group inline-block relative">
         <button
-          class="bg-black text-white uppercase text-sm font-semibold  px-4 rounded inline-flex items-center"
+          class="transition duration-300 hover:text-gray-400 bg-black text-white uppercase text-sm font-semibold  px-4 rounded inline-flex items-center"
+
         >
           <span class="mr-1">Partners</span>
           <svg
@@ -32,8 +24,8 @@ const tag = <DropDownLink brand={uniqueBrands[0]}/>
           </svg>
         </button>
         <ul class="absolute hidden text-white pt-1 group-hover:block">
-        {allBrands}
+        {brandList}
        </ul>
       </div>
-    </div>}
+    </div>)}
 

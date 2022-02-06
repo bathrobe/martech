@@ -1,6 +1,7 @@
 import Link from "next/link";
 import groq from "groq";
 import { client } from "../../lib/sanity/client";
+import { allBrandsQuery } from "../../lib/sanity/allBrandsQuery.js"
 import urlFor from "../../lib/sanity/urlFor";
 import { postQuery } from "../../lib/sanity/postQuery";
 import Layout from "../../components/Layout";
@@ -10,7 +11,7 @@ import CTA from "../../components/CTA";
 import PortableText from "react-portable-text";
 import YouTube from "react-youtube";
 import Employee from "../../components/Employee";
-export default function Post({ post }) {
+export default function Post({ post, allBrands }) {
   // this strips the youtube video URL down to its ID
   let res = "";
   if (post?._type === "videoInterview") {
@@ -25,7 +26,7 @@ export default function Post({ post }) {
   }
 
   return (
-    <Layout>
+    <Layout brands={allBrands}>
       <PostHead
         title={post?.title}
         description={post?.description}
@@ -102,13 +103,15 @@ export async function getStaticProps({ params }) {
   const post = await client.fetch(postQuery, {
     slug: params.slug,
   });
+  const allBrands = await client.fetch(allBrandsQuery);
+
   return {
     props: {
       post,
-    },
-  };
+      allBrands
+  }
 }
-
+  }
 export async function getStaticPaths() {
   const paths = await client.fetch(
     groq`*[defined(slug.current && _type != brand)][]{

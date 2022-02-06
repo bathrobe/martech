@@ -4,24 +4,28 @@ import { client } from "../../lib/sanity/client";
 import groq from "groq";
 import Layout from "../../components/Layout";
 import BrandBio from "../../components/BrandBio";
+import { allBrandsQuery } from "../../lib/sanity/allBrandsQuery";
 import PostCard from "../../components/PostCard";
-export default function Brand({ brand }) {
+export default function Brand({ brand, allBrands}) {
   return (
-    <Layout>
+    <Layout brands={allBrands}>
       <BrandBio brandPage={true} brand={brand} />
 
       {brand?.posts.map((p) => {
         return <PostCard brand={brand} post={p} brandPage={true} />;
       })}
+      
     </Layout>
   );
 }
 
 export async function getStaticProps({ params }) {
   const brand = await client.fetch(brandQuery, { slug: params.brand });
+const allBrands = await client.fetch(allBrandsQuery)
   return {
     props: {
       brand,
+      allBrands
     },
   };
 }
