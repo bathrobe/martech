@@ -11,10 +11,8 @@ export default function Home({  posts, allBrands }) {
   const rest = posts.slice(1);
   return (
     <Layout brands={allBrands}>
-      <main>
         <MainHead />
         <Portal/>
-     </main>
     </Layout>
   
   );

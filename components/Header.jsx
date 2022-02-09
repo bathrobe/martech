@@ -3,8 +3,8 @@ import Link from "next/link";
 import Dropdown from "./DropDown.jsx"
 export default function Header({brands}) {
   return (
-    <header className="sticky top-0 bg-black">
-      <nav className="py-4 flex items-center justify-between mx-auto max-w-container">
+    <header className="sticky md:top-0 bg-black md:w-full">
+      <nav className="py-4 flex items-center justify-between mx-auto md:max-w-container">
         <Link href="/">
           <a>
             <img className="mr-24" src="/Martech R White on Transparent.webp" />

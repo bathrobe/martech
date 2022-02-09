@@ -3,9 +3,9 @@ import Header from "./Header";
 import Footer from "./Footer";
 export default function Layout({ brands, children }) {
   return (
-    <div className="h-screen flex flex-col justify-between">
-      <Header brands={brands}></Header>
-      <main className="flex-grow">{children}</main>
+    <div className="min-w-full justify-between flex-col ">
+      <Header brands={brands}/>
+      <main className="">{children}</main>
       <Footer />
     </div>
   );
