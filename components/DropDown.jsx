@@ -6,13 +6,13 @@ export default function Dropdown(brands){
   let brandList = brands?.brands?.map(b=>{
     return  <DropDownLink brand={b}/>
   })
-  return   (  <div class="">
-      <div class="group inline-block relative">
+  return   (  <div class="mx-1 md:mx-6 transition duration-300 hover:text-gray-400 text-white md:text-sm text-xs  ">
+      <div className="group inline-block relative">
         <button
-          class="transition duration-300 hover:text-gray-400 bg-black text-white uppercase text-sm font-semibold  px-4 rounded inline-flex items-center"
+          className="my-0 py-0 transition duration-300 hover:text-gray-400 bg-black text-white uppercase text-xs md:text-sm font-semibold  inline-flex justify-between "
 
         >
-          <span class="mr-1">Partners</span>
+          <span className="mr-1">Partners</span>
           <svg
             class="fill-current h-4 w-4"
             xmlns="http://www.w3.org/2000/svg"

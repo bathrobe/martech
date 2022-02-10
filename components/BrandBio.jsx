@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function BrandBio({ brand, brandPage = false }) {
   return (
     <figure
-      className={`max-w-container ${
+      className={` ${
         brandPage ? "mb-24" : "mb-12"
       } mt-12 mx-auto`}
     >

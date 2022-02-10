@@ -3,7 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 export default function Layout({ brands, children }) {
   return (
-    <div className="min-w-full justify-between flex-col ">
+    <div className=" justify-between flex flex-col ">
       <Header brands={brands}/>
       <main className="">{children}</main>
       <Footer />
