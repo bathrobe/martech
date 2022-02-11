@@ -1,7 +1,7 @@
 import Link from "next/link"
 const Portal = () => {
   return (
-    <div className="-mt-36  mx-auto">
+    <div className="-mt-36  max-w-container mx-auto">
       <section class=" bg-white text-gray-600 body-font">
   <div class=" px-5 pt-12 pb-16 mx-auto">
     <div class="flex flex-wrap -m-4">
