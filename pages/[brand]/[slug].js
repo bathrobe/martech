@@ -93,7 +93,10 @@ export default function Post({ post, allBrands }) {
           ""
         )}
       </div>
+        <div class="mx-auto max-w-container">
+
       <BrandBio brand={post?.brand} />
+      </div>
       <CTA />
     </Layout>
   );

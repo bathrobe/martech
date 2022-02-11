@@ -9,12 +9,13 @@ import PostCard from "../../components/PostCard";
 export default function Brand({ brand, allBrands}) {
   return (
     <Layout brands={allBrands}>
-      <BrandBio brandPage={true} brand={brand} />
+      <div className="max-w-container mx-auto">
+      <BrandBio  brandPage={true} brand={brand} />
 
       {brand?.posts.map((p) => {
         return <PostCard brand={brand} post={p} brandPage={true} />;
       })}
-      
+     </div> 
     </Layout>
   );
 }
