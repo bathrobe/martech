@@ -7,8 +7,8 @@ const Interviews = ({content, allBrands}) => {
   return (
     <Layout  brands={allBrands}>
    
-<h1 className="text-4xl font-semibold mt-12 max-w-container mx-auto font-serif">Interviews</h1>
-      <h3 class="text-2xl font-sans mt-4 mb-8 font-light max-w-container mx-auto">Q and A's to help you make better decisions.</h3>
+<h1 className="px-2 text-4xl font-semibold mt-12 max-w-container mx-auto font-serif">Interviews</h1>
+      <h3 class="px-2 text-2xl font-sans mt-4 mb-8 font-light max-w-container mx-auto">Q and A's to help you make better decisions.</h3>
       {content?.map(p=>{
          return <PostCard post={p}/>
       })}
