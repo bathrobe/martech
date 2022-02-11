@@ -5,7 +5,7 @@ export default function Layout({ brands, children }) {
   return (
     <div className=" justify-between min-h-screen flex flex-col ">
       <Header brands={brands}/>
-      <main className="">{children}</main>
+      <main className="flex-grow">{children}</main>
       <Footer />
     </div>
   );
