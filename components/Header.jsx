@@ -16,12 +16,12 @@ export default function Header({brands}) {
   <a href="https://martechrecord.com/industry-resources" className="mx-1 sm:mx-6   transition duration-300 hover:text-gray-400 text-white text-xs lg:text-base font-medium ">
 <Tippy interactive={true} interactiveBorder={2} duration={4} content={
             <a className="bg-black p-2 text-sm text-white transition duration-300 hover:text-gray-400 " href="https://www.martechrecord.com/affiliate-marketing-profiles">Affiliate Marketing Platform Profiles</a>
-          }><button onClick={()=>{window.open("https://martechrecord.com/industry-resources")}} className="mx-1 sm:mx-6   transition duration-300 hover:text-gray-400 text-white text-xs lg:text-base font-medium uppercase">ARTICLES</button></Tippy>
+          }><button onClick={()=>{window.open("https://martechrecord.com/industry-resources","_self")}} className="mx-1 sm:mx-6   transition duration-300 hover:text-gray-400 text-white text-xs lg:text-base font-medium uppercase">ARTICLES</button></Tippy>
 
             </a>
             <Tippy interactive={true} interactiveBorder={20} content={
             <a className="bg-black p-2 text-sm text-white transition duration-300 hover:text-gray-400 " href="https://www.martechrecord.com/summary-of-platforms-reviewed">Summary of Platforms Reviewed</a>
-          }><button onClick={()=>{window.open("https://martechrecord.com/affiliate-platform-guide")}} className="mx-1 sm:mx-6   transition duration-300 hover:text-gray-400 text-white text-xs lg:text-base font-medium uppercase">BUYER'S GUIDE</button></Tippy>
+          }><button onClick={()=>{window.open("https://martechrecord.com/affiliate-platform-guide","_self")}} className="mx-1 sm:mx-6   transition duration-300 hover:text-gray-400 text-white text-xs lg:text-base font-medium uppercase">BUYER'S GUIDE</button></Tippy>
     <a href="https://martechrecord.com/our-events" className="mx-1 sm:mx-6   transition duration-300 hover:text-gray-400 text-white text-xs lg:text-base font-medium uppercase">
             events
             </a>
