@@ -5,22 +5,22 @@ export default function Footer() {
     <footer className="bg-gray-300 flex flex-col pt-12">
           <div className="flex justify-evenly md:justify-center pb-12 items-center">
            <Link className="mx-8" href="/blog">
-            <a className="text-black px-4 text-sm md:text-lg font-normal uppercase">
+            <a className="text-black transition duration-300 hover:text-gray-400 px-4 text-sm md:text-lg font-normal uppercase">
               Blog
             </a>
     </Link>
           <Link className="mx-8" href="/interviews">
-            <a className="text-black mx-2 text-sm md:text-lg   px-0 md:px-4 py-1  font-normal uppercase">
+            <a className="text-black transition duration-300 hover:text-gray-400 mx-2 text-sm md:text-lg   px-0 md:px-4 py-1  font-normal uppercase">
               Interviews
             </a>
       </Link>
           <Link className="mx-8" href="/whitepapers">
-            <a className="text-black mx-2 text-sm md:text-lg px-0 md:px-4 py-1    font-normal uppercase">
+            <a className="text-black transition duration-300 hover:text-gray-400 mx-2 text-sm md:text-lg px-0 md:px-4 py-1    font-normal uppercase">
               whitepaper
             </a>
           </Link>
           <Link className="mx-8" href="/about">
-            <a className="text-black mx-2 text-sm md:text-lg px-0 md:px-4 py-1   font-normal uppercase">
+            <a className="text-black transition duration-300 hover:text-gray-400 mx-2 text-sm md:text-lg px-0 md:px-4 py-1   font-normal uppercase">
               about
             </a>
             </Link>
@@ -29,10 +29,10 @@ export default function Footer() {
         <div className="">
             <img src="/r_logo.webp" alt="logo" />
         </div>
-          <div className="flex my-4">
-              <a href="https://twitter.com/martechrecord">
+          <div className="flex my-8">
+              <a target="_blank" href="https://twitter.com/martechrecord">
               <img className="px-5" src="/twitter.svg" alt="logo" />
-            </a><a  href="https://www.linkedin.com/company/martech-record/">
+            </a><a target="_blank"  href="https://www.linkedin.com/company/martech-record/">
               <img className="px-5" src="/linkedin.svg" alt="logo" />
             </a>
         </div>

@@ -8,7 +8,7 @@ module.exports = {
     },
     extend: {
       maxWidth: {
-        container: "980px",
+        container: "960px",
       },
       backgroundImage: {
         "cta-texture": "url('/bg.webp')",

@@ -14,6 +14,8 @@ function MyApp({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
           rel="stylesheet"
         ></link>
+          <link rel="icon" type="image/png" sizes="16x16" href="/favi.png"/>
+          <title>HOME | Martech Record</title>
       </Head>
       <Component {...pageProps} />
     </>
