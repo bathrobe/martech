@@ -19,7 +19,7 @@ export default Whitepaper
 
 export async function getStaticProps() {
 const allBrands = await client.fetch(allBrandsQuery)
-const content = await client.fetch(`*[_type == "whitepaper"]{
+const content = await client.fetch(`*[_type == "whitepaper"] | order(publishedAt) {
 _type,
 title,
 brand->,

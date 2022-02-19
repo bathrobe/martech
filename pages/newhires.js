@@ -19,7 +19,7 @@ export default NewHires
 
 export async function getStaticProps() {
 const allBrands = await client.fetch(allBrandsQuery)
-const content = await client.fetch(`*[_type == "newHire"]{
+const content = await client.fetch(`*[_type == "newHire"] | order(publishedAt desc) {
 _type,
 title,
 brand->,

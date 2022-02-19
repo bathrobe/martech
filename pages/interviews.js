@@ -20,7 +20,7 @@ const Interviews = ({content, allBrands}) => {
 export default Interviews
 
 export async function getStaticProps() {
-  const content = await client.fetch(`*[_type == "textInterview"]{
+  const content = await client.fetch(`*[_type == "textInterview"] | order(publishedAt desc) {
 _type,
 publishedAt,
 title,

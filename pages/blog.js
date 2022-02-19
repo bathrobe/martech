@@ -14,21 +14,19 @@ const Blog = ({content, allBrands}) => {
     </Layout>
   )
 }
-
 export default Blog
 
 export async function getStaticProps() {
 const allBrands = await client.fetch(allBrandsQuery)
-  const content = await client.fetch(`*[_type == "longformPost"]{
+  const content = await client.fetch(`*[_type == "longformPost"] | order(publishedAt desc) {
 _type,
 publishedAt,
 title,
 "slug": slug.current,
 brand->,
 description,
-
-
 }`);
+
   return {
     props: {
       allBrands,

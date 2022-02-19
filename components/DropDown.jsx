@@ -23,7 +23,7 @@ export default function Dropdown(brands){
             />
           </svg>
         </button>
-        <ul class="absolute hidden text-black pt-1 group-hover:block">
+        <ul class="absolute hidden text-black  pt-1 group-hover:block">
         {brandList}
        </ul>
       </div>
