@@ -69,7 +69,7 @@ export default function Post({ post, allBrands }) {
               normal: (props) => <p className="py-2" {...props} />,
               blockquote: (props) => (
                 <blockquote
-                  className="pl-4 italic text-brand-green text-medium text-xl"
+                  className="italic text-brand-green text-semibold text-2xl"
                   {...props}
                 />
               ),
