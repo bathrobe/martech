@@ -7,7 +7,7 @@ export default function BrandBio({ brand, brandPage = false }) {
   return (
     <figure
       className={` ${
-        brandPage ? "mb-24" : "mb-12"
+        brandPage ? "mb-8" : "mb-12"
       } mt-12 mx-auto px-4`}
     >
       {brandPage ? "" : <hr className="text-gray-800 mb-10" />}

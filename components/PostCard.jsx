@@ -9,12 +9,10 @@ export default function PostCard({
 }) {
   return (
     <div
-      className={`max-w-2xl px-14 mx-auto pt-8 ${
-        brandPage ? "py-14" : ""
-      } bg-white ${first ? "-mt-14" : ""}`}
+      className={`max-w-2xl px-14 mx-auto bg-white ${first ? "-mt-14" : ""}`}
     >
       <article key={post?._id}>
-        <p className="text-brand-green text-sm pt-4 pb-1">
+        <p className="text-brand-green text-sm pt-2 pb-4">
           {dayjs(post?.publishedAt).format("MMM D, YYYY")}
         </p>
         <p className="text-gray-800 text-md font-light pb-4">
