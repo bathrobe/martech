@@ -134,6 +134,11 @@ export default function Header({ brands }) {
             <div className="ml-1 md:ml-6">
               <Dropdown brands={brands} />
             </div>
+            <div className="ml-1 md:ml-6 transition font-medium font-light duration-300 hover:text-yellow-700 text-black md:text-sm text-xs font-medium uppercase">
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+            </div>
           </div>
         </nav>
       </div>

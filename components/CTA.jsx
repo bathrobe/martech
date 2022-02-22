@@ -14,7 +14,7 @@ export default function CTA() {
           <button
             type="button"
             className="text-white bg-gray-800 hover:bg-gray-900 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mt-4 text-center mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-800 dark:border-gray-700"
-            onClick={()=>{window.open("https://martechrecord.com")}}
+            onClick={()=>{window.open("https://www.martechrecord.com/affiliate-platform-guide")}}
           >
             Get the Guide
           </button>

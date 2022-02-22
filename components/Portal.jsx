@@ -10,8 +10,8 @@ const Portal = () => {
           <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-yellow-100 text-green-500 mb-4">
 <Link href="/blog"><a><img className="text-gray-700" src="/book-open.svg"/>
 </a></Link>                              </div>
-          <Link href="/blog"><a>          <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Longform Posts</h2>
-          <p class="leading-relaxed text-base">Longform content from our trusted partners on all things affiliate.</p>
+          <Link href="/blog"><a>          <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Blog</h2>
+          <p class="leading-relaxed text-base">Content from our trusted partners on all things affiliate.</p>
  </a></Link>
        </div>
       </div>
@@ -20,8 +20,8 @@ const Portal = () => {
           <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-yellow-100 text-green-500 mb-4">
 <Link href="/interviews"><a><img className="text-gray-700" src="/message-circle.svg"/>
 </a></Link>                           </div>
-          <Link href="/interviews"><a>          <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Q & A with Industry Leaders</h2>
-          <p class="leading-relaxed text-base">Learn from leading affiliate marketers in these exclusive  interviews.</p>
+          <Link href="/interviews"><a>          <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Interviews with Industry Leaders</h2>
+          <p class="leading-relaxed text-base">Learn from leading affiliate marketers in these exclusive Q&A's.</p>
  </a></Link>
        </div>
       </div>
@@ -61,7 +61,7 @@ const Portal = () => {
           <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-yellow-100 text-green-500 mb-4">
 <a href="https://martechrecord.com"><img className="text-gray-700" src="/info.svg"/>
 </a>                           </div>
-          <a href="https://martechrecord.com">          <h2 class="text-lg text-gray-900 font-medium title-font mb-2">About Martech</h2>
+          <a href="https://martechrecord.com/about">          <h2 class="text-lg text-gray-900 font-medium title-font mb-2">About Martech</h2>
           <p class="leading-relaxed text-base">Learn more about the Martech Record, a decision maker's best resource.</p>
  </a>
        </div>

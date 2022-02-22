@@ -19,11 +19,9 @@ export default function Footer() {
               whitepaper
             </a>
           </Link>
-          <Link className="mx-8" href="/about">
-            <a className="text-black transition duration-300 hover:text-gray-400 mx-2 text-sm md:text-lg px-0 md:px-4 py-1   font-normal uppercase">
+            <a href="https://martechrecord.com/about" className="mx-8 text-black transition duration-300 hover:text-gray-400 mx-2 text-sm md:text-lg px-0 md:px-4 py-1   font-normal uppercase">
               about
             </a>
-            </Link>
           </div>
         <div className="flex flex-col max-w-2xl mx-auto">
         <div className="">
@@ -31,9 +29,9 @@ export default function Footer() {
         </div>
           <div className="flex my-8">
               <a target="_blank" href="https://twitter.com/martechrecord">
-              <img className="px-5" src="/twitter.svg" alt="logo" />
+              <img className="px-5" src="/twit.webp" alt="logo" />
             </a><a target="_blank"  href="https://www.linkedin.com/company/martech-record/">
-              <img className="px-5" src="/linkedin.svg" alt="logo" />
+              <img className="px-5" src="/linked.webp" alt="logo" />
             </a>
         </div>
         </div>
