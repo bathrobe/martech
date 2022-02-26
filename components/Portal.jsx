@@ -42,7 +42,7 @@ const Portal = () => {
                 <Link href="/videos"><a><img className="text-gray-700" src="/film.svg"/>
 </a></Link>           </div>
           <Link href="/videos"><a>          <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Videos</h2>
-          <p class="leading-relaxed text-base">Interviews in video form from top industry experts. Get up to speed in record time.</p>
+          <p class="leading-relaxed text-base">Interviews in video form from top industry experts.</p>
  </a></Link>
        </div>
       </div>
